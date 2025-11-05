@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>FICHE INCIDENTS - HITS BOULOGNE</title>
+<title>FICHE INCIDENTS - HITS ARMENTIÈRES</title>
 
 <!-- html2pdf (inclut jsPDF + html2canvas) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous"></script>
@@ -129,7 +129,7 @@
     <div class="page" id="pageContent">
       <div class="header no-break">
         <img src="logo_otacos.png" alt="O'Tacos">
-        <div><strong>HITS BOULOGNE</strong>O’tacos Boulogne-sur-Mer</div>
+        <div><strong>HITS ARMENTIÈRES</strong>O’tacos Armentières</div>
       </div>
 
       <div class="title no-break">FICHE INCIDENTS</div>
@@ -202,7 +202,7 @@
       <div class="no-break made-row" style="font-size:14px;">
         <strong>Fait le :</strong>
         <input type="date" id="fait_le" placeholder="jj/mm/aaaa">
-        <span class="city">, à Boulogne-sur-Mer</span>
+        <span class="city">, à Armentières</span>
       </div>
 
       <div class="signatures no-break">
@@ -530,7 +530,7 @@ function blobToBase64(blob){ return new Promise((res,rej)=>{ const r=new FileRea
 async function sendToServer(){
   if(!validateForm()) return;
 
-  const WEBAPP_URL="https://otacos-proxy.contact-otacosbsm.workers.dev/";
+  const WEBAPP_URL="https://arsincident.contact-otacosbsm.workers.dev/";
   const loader=$("#loader"), btn=$("#sendBtn");
   try{
     btn.disabled=true; loader.style.display="flex";
